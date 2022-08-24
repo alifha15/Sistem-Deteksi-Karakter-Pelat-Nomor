@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
-import cv2
+import opencv-python-headless
 import tensorflow as tf
 from skimage import color, io, filters, morphology
 from tensorflow.keras import optimizers
