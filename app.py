@@ -111,7 +111,7 @@ def segment_characters(image) :
     img_binary_lp[:,330:333] = 255
 
     # Estimations of character contours sizes of cropped license plates
-    dimensions = [LP_WIDTH/6,
+    dimensions = [LP_WIDTH/8,
                        LP_WIDTH/2,
                        LP_HEIGHT/15,
                        2*LP_HEIGHT/15]
