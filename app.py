@@ -64,7 +64,7 @@ def find_contours(dimensions, img) :
             char = cv2.resize(char, (20, 40))
             
             cv2.rectangle(ii, (intX,intY), (intWidth+intX, intY+intHeight), (50,21,200), 2)
-            plt.imshow(ii, cmap='gray')
+            #plt.imshow(ii, cmap='gray')
 
             # Make result formatted for classification: invert colors
             char = cv2.subtract(255, char)
@@ -115,7 +115,7 @@ def segment_characters(image) :
                        LP_WIDTH/2,
                        LP_HEIGHT/15,
                        2*LP_HEIGHT/15]
-    plt.imshow(img_binary_lp, cmap='gray')
+    #plt.imshow(img_binary_lp, cmap='gray')
     plt.show()
     cv2.imwrite('contour.jpg',img_binary_lp)
 
