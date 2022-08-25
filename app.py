@@ -11,7 +11,9 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.layers import Dense, Flatten, MaxPooling2D, Dropout, Conv2D
 from tensorflow.keras.models import load_model
 
-plate_cascade = cv2.CascadeClassifier('cascade5.xml')
+list = random.choice(os.listdir("cascade\\"))
+plate_cascade = cv2.CascadeClassifier(list)
+#plate_cascade = cv2.CascadeClassifier('cascade5.xml')
 MODEL_PATH = 'model31.h5'
 model = load_model(MODEL_PATH,compile=False)
 
