@@ -6,11 +6,6 @@ import cv2
 import tensorflow as tf
 import os, random
 from skimage import color, io, filters, morphology
-from sklearn.metrics import f1_score 
-from tensorflow.keras import optimizers
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.layers import Dense, Flatten, MaxPooling2D, Dropout, Conv2D
 from tensorflow.keras.models import load_model
 
 
