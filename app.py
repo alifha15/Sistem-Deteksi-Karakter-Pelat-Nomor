@@ -3,7 +3,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
-import request
+import requests
 import tensorflow as tf
 import os, random
 from skimage import color, io, filters, morphology
