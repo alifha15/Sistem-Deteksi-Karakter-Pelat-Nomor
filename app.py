@@ -11,7 +11,7 @@ from tensorflow.keras.models import load_model
 
 link = 'https://github.com/alifha15/Sistem-Deteksi-Karakter-Pelat-Nomor/tree/main/cascade'
 result = requests.get(link)
-list = random.choice(os.listdir('result'))
+list = random.choice(os.listdir("result"))
 plate_cascade = cv2.CascadeClassifier(list)
 
 #plate_cascade = cv2.CascadeClassifier('cascade5.xml')
