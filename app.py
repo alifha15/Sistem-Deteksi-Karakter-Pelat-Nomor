@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 import tensorflow as tf
+import os, random
 from skimage import color, io, filters, morphology
 from tensorflow.keras import optimizers
 from tensorflow.keras.models import Sequential
