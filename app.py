@@ -3,13 +3,15 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
+import request
 import tensorflow as tf
 import os, random
 from skimage import color, io, filters, morphology
 from tensorflow.keras.models import load_model
 
 link = 'https://github.com/alifha15/Sistem-Deteksi-Karakter-Pelat-Nomor/tree/main/cascade'
-list = random.choice(os.listdir(link))
+result = requests.get(link)
+list = random.choice(os.listdir(result))
 plate_cascade = cv2.CascadeClassifier(list)
 
 #plate_cascade = cv2.CascadeClassifier('cascade5.xml')
