@@ -8,7 +8,7 @@ import os, random
 from skimage import color, io, filters, morphology
 from tensorflow.keras.models import load_model
 
-list = random.choice(os.listdir("/cascade"))
+list = random.choice(os.listdir("/cascade/"))
 plate_cascade = cv2.CascadeClassifier(list)
 
 #plate_cascade = cv2.CascadeClassifier('cascade5.xml')
